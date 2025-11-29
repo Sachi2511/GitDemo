@@ -73,17 +73,20 @@ public class SearchitemTest{
     @BeforeMethod
     public void setup()
     {
-    	if(System.getProperty("browser").contains("chrome"))
+    	if (System.getProperty("browser")!= null)
     	{
-    	driver=new ChromeDriver();
-    	}
-    	else if(System.getProperty("browser").contains("edge"))
-    	{
+    	  if(System.getProperty("browser").contains("chrome"))
+    	   {
+    	     driver=new ChromeDriver();
+    	  }
+    	  else if(System.getProperty("browser").contains("edge"))
+    	  {
     		driver=new EdgeDriver();
-    	}
-    	else
-    	{
+    	  }
+    	  else
+    	  {
     		driver=new ChromeDriver();
+    	  }
     	}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

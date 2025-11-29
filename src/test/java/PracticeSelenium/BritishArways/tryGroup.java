@@ -15,5 +15,10 @@ public class tryGroup {
 	{
 		System.out.println("this is non category method");
 	}
+	@Test
+	public void webhooktest()
+	{
+		System.out.println("just checking webhook trigger");
+	}
 }
 
