@@ -15,5 +15,10 @@ public class tryGroup {
 	{
 		System.out.println("this is non category method");
 	}
+	@Test
+	public void checkingbranches()
+	{
+		System.out.println("checking switching branches");
+	}
 }
 
