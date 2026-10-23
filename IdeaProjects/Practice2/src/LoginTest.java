@@ -6,6 +6,7 @@ public class LoginTest {
         System.out.println("Entering username and password");
         System.out.println("Entering username and password colleague change");
         System.out.println("Clicking on Login button");
+        System.out.println("Clicking on Login button Sachi change");
         System.out.println("Validating dashboard page");
     }
 }
